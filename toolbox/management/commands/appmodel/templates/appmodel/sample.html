@@ -1,0 +1,25 @@
+{% extends "base.html"
+
+{% block content %}
+
+<div class="page-header">
+  <h1>Sample <small>template</small></h1>
+</div>
+
+{% endblock %}
+
+
+{% block js %}
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+    google.setOnLoadCallback(function() {
+        angular.bootstrap(document.body, ['sample-ng-app']);
+    });
+    google.load('visualization', '1.0', {'packages':['table', 'corechart', 'geochart', 'controls']});
+    $(document).ready(function() {
+    });
+</script>
+
+{% endblock %}

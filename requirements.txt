@@ -1,0 +1,110 @@
+# git clone https://gist.github.com/38995ed49140bdf9ec77.git
+
+# WEB SERVERS
+gunicorn
+wsgiref
+uWSGI
+Werkzeug
+
+# PYTHON
+python-dateutil
+requests
+six
+pytz
+pillow==2.5.1
+
+# SERIALIZATION
+simplejson
+jsonpickle
+#git+git://github.com/paulocheque/jsonpickle.git#egg=jsonpickle
+lxml
+defusedxml
+xmltodict
+dicttoxml
+
+# DJANGO
+django>=1.7
+# south
+django-extensions
+django-debug-toolbar
+djangorestframework
+#django-tastypie
+git+git://github.com/toastdriven/django-tastypie.git#egg=django-tastypie-my0.12.1
+django-tastypie-crust
+markdown
+django-filter
+django-polymorphic
+django-getenv
+dj-static
+git+git://github.com/paulocheque/django-cas2.git#egg=django-cas2
+#django-mama-cas
+
+# DJANGO ADMIN
+django-smart-autoregister
+django-admin-bootstrapped
+django_chartit
+#django-admin-tools-stats # need memcache, not py3 compatible
+django-adminplus
+nexus
+django-grappelli
+feedparser
+django-admin-tools
+django-fluent-dashboard
+django-dashing
+django-rq-dashboard
+
+# Django registration
+django-allauth
+#django-social-auth # need oauth, not py3 compatible
+python-social-auth
+
+# Django Themes
+pinax_theme_bootstrap
+django-forms-bootstrap
+
+# DATABASE
+mongoengine
+pymongo
+#mysql-python
+psycopg2 # not pypy compatible
+#psycopg2cffi # pypy2+ compatible
+django-storages
+
+# TASKS
+django-future
+django-celery
+
+# CACHE
+redis
+#rq
+git+git://github.com/nvie/rq.git#egg=rq
+#rq-scheduler
+git+git://github.com/ui/rq-scheduler.git#egg=rq-scheduler
+flask
+#rq-dashboard
+git+git://github.com/nvie/rq-dashboard.git#egg=rq-dashboard
+
+# SOCIAL
+#tweepy # not py3 compatible
+#py-social # need tweetpy, not py3 compatible
+
+# PAYMENT
+django-paypal
+django-merchant
+
+python-cielo
+pagseguro==0.1.6.dev0
+mercadopago
+moipy
+paypal
+paypalrestsdk
+
+# UTILS
+#pyBarcode
+qrcode
+
+# MONITORING/DEVOPS
+#newrelic
+sendgrid
+fabric
+#sentry

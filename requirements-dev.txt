@@ -1,0 +1,6 @@
+# TESTS
+django-dynamic-fixture
+django_coverage
+nose
+django-nose
+tox

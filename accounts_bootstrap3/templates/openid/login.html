@@ -1,0 +1,22 @@
+{% extends "openid/base.html" %}
+
+{% load url from future %}
+{% load i18n %}
+{% load bootstrap %}
+
+{% block head_title %}OpenID Sign In{% endblock %}
+
+{% block content %}
+
+<div class="page-header">
+  <h1>{% trans 'OpenID Sign In' %} <small></small></h1>
+</div>
+
+
+<form id="openid_login_form" class="openid_login" method="post" action="{% url 'openid_login' %}" role="form">
+{% csrf_token %}
+{{ form|bootstrap }}
+<button type="submit" class="btn btn-primary">Sign In</button>
+</form>
+
+{% endblock %}

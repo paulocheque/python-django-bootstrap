@@ -1,0 +1,109 @@
+.navbar-brand-img {
+    padding:0px;
+    margin:5px;
+}
+
+.navbar-brand-img img {
+    width:200px;
+    height:40px;
+}
+
+ul.social-icons li a {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.progress { position:relative; width:300px; border: 1px solid #ddd; border-radius: 3px; margin-top:5px; margin-bottom:5px; }
+.bar { background-color: #B4F5B4; width:0%; height:20px; border-radius: 3px; }
+.bar-error { background-color: #FF0000; }
+.percent { position:absolute; display:inline-block; top:3px; left:48%; }
+
+.text-with-border {
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.text-with-border-inverse {
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.payment-flags{}
+.payment-flags span {background:transparent url(/static/img/order/sprite_flags.125.gif) no-repeat 0 0;float:left;height:20px;margin-bottom:5px;margin-right:5px;text-indent:-9999px;width:42px}
+.payment-flags .flag_visa{background-position:-42px 0}
+.payment-flags .flag_mastercard{background-position:-84px 0}
+.payment-flags .flag_diners{background-position:-126px 0}
+.payment-flags .flag_americanexpress{background-position:-168px 0}
+.payment-flags .flag_hipercard{background-position:-210px 0}
+.payment-flags .flag_aura{background-position:-252px 0}
+.payment-flags .flag_elo{background-position:-294px 0}
+.payment-flags .flag_personalcard{background-position:-672px 0}
+.payment-flags .flag_cardban{background-position:-840px 0}
+.payment-flags .flag_valecard{background-position:-882px 0;margin-right:0}
+.payment-flags .flag_plenocard{background-position:-336px 0}
+.payment-flags .flag_brasilcard{background-position:-756px 0}
+.payment-flags .flag_fortbrasil{background-position:-798px 0}
+.payment-flags .flag_Cabal{background-position:-714px 0}
+.payment-flags .flag_oipaggo{background-position:-378px 0}
+.payment-flags .flag_bradesco{background-position:-420px 0}
+.payment-flags .flag_itau{background-position:-462px 0}
+.payment-flags .flag_bb{background-position:-504px 0}
+.payment-flags .flag_banrisul{background-position:-546px 0}
+.payment-flags .flag_hsbc{background-position:-588px 0}
+.payment-flags .flag_mais{background-position:-1008px 0}
+.payment-flags .flag_avista{background-position:-1050px 0}
+.payment-flags .flag_grandcard{background-position:-1092px 0}
+.payment-flags .flag_boleto{background-position:-630px 0}
+.payment-flags .flag_mercadopago {background:transparent url(/static/img/order/mercadopago-icon.gif) no-repeat 0 0;display:block;float:left;height:20px;margin-bottom:5px;margin-right:5px;width:42px;}
+
+.box-ratio {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+
+.box-ratio:after {
+    display: block;
+    content: "";
+}
+
+.box-ratio1x1:after {
+    padding-top: 100%;
+}
+
+.box-ratio4x3:after {
+    padding-top: 75%;
+}
+
+.box-ratio16x9:after {
+    padding-top: 56.25%;
+}
+
+.box-ratio-content {
+    position: absolute;
+    top: 0; bottom: 0; right: 0; left: 0;
+    background-color: rgb(0, 0, 0);
+}
+
+.admin-image {
+    display: inline;
+    width: 50px;
+    height: 50px;
+}
+
+/* custom */
+
+.widget-wrapper {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 6px #ccc;
+    height: 500px;
+}
+
+.widget-chart {
+
+}
+
+.widget-word, .widget-number {
+    font-size: 32px;
+    font-weight: bold;
+}

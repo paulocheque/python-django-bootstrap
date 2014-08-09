@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div ng-controller="DashboardCtrl" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <div id="widgets" ui:sortable ng-model="widgets" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div ng-repeat="widget in widgets" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 widget-wrapper img-rounded">
+            <div id="widget-[[ widget.id ]]" class="widget-chart"></div>
+        </div>
+        <div id="toolbar-[[ widget.id ]]"></div>
+    </div>
+
+    <!-- <img ng-repeat="widget in widgets" src="[[ widget.img_url ]]"> -->
+</div>
+
+
+{% endblock %}
+
+
+{% block js %}
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+    google.setOnLoadCallback(function() {
+        angular.bootstrap(document.body, ['dashboard']);
+    });
+    google.load('visualization', '1.0', {'packages':['table', 'corechart', 'geochart', 'controls']});
+    $(document).ready(function() {
+    });
+</script>
+
+{% endblock %}
